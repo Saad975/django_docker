@@ -24,7 +24,7 @@ COPY pyproject.toml /usr/src/src/pyproject.toml
 COPY poetry.lock /usr/src/src/poetry.lock
 
 RUN ln -s ~/.poetry/bin/poetry /usr/bin/poetry
-#RUN poetry shell
+
 RUN poetry install
 
 COPY . /usr/src/src
